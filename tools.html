@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Tools · breathe.</title>
+
+  <meta name="description"
+        content="Small self-care and grounding activities from breathe.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+  <nav class="navbar" aria-label="Main navigation">
+
+    <a class="brand"
+       href="index.html"
+       aria-label="breathe. home">
+
+      <svg class="brand-leaf"
+           viewBox="0 0 32 32"
+           aria-hidden="true">
+
+        <path
+          d="M25.8 5.4C16.2 6.2 8.9 10.5 8.4 18.1c-.3 4.6 2.8 7.8 7 7.5 7.4-.5 10.1-9.2 10.4-20.2Z"
+          fill="#86a77c"/>
+
+        <path
+          d="M8.6 25.5c3.5-5.2 8-9.2 13.9-13.3"
+          fill="none"
+          stroke="#587b59"
+          stroke-width="1.7"
+          stroke-linecap="round"/>
+
+      </svg>
+
+      <span>breathe.</span>
+
+    </a>
+
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false">
+
+      <span>☰</span>
+
+    </button>
+
+
+    <div class="nav-links">
+
+      <a data-page="home" href="index.html">
+        Home
+      </a>
+
+      <a data-page="learn" href="learn.html">
+        Learn
+      </a>
+
+      <a data-page="tools" href="tools.html">
+        Tools
+      </a>
+
+      <a data-page="help" href="support.html">
+        Get Help
+      </a>
+
+      <a data-page="about" href="about.html">
+        About
+      </a>
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+
+<main>
+
+
+<section class="inner-hero">
+
+  <span class="spark" aria-hidden="true">
+    ✦
+  </span>
+
+  <h1>
+    A little space for you.
+  </h1>
+
+  <p>
+    Try something small.
+    You don't have to do everything.
+  </p>
+
+</section>
+
+
+
+<!-- BREATHING -->
+
+<section class="tools-wrap">
+
+  <article class="tool-card breathe-tool">
+
+    <div class="tool-copy">
+
+      <div class="tool-label">
+        PAUSE
+      </div>
+
+      <h2>
+        Slow your breathing.
+      </h2>
+
+      <p>
+        Follow the circle at a comfortable pace.
+        Breathe in as it grows and breathe out as
+        it gets smaller.
+        If it feels uncomfortable, return to your
+        normal breathing.
+      </p>
+
+      <div class="tool-actions">
+
+        <button
+          class="btn btn-primary"
+          id="breathStart"
+          type="button">
+          Start
+        </button>
+
+        <button
+          class="btn btn-soft"
+          id="breathStop"
+          type="button">
+          Stop
+        </button>
+
+      </div>
+
+      <p
+        class="status"
+        id="breathStatus"
+        aria-live="polite">
+        Ready when you are.
+      </p>
+
+    </div>
+
+
+    <div class="breath-orb-wrap">
+
+      <div
+        class="breath-orb"
+        id="breathOrb">
+
+        <span id="breathPhase">
+          Ready
+        </span>
+
+      </div>
+
+    </div>
+
+  </article>
+
+
+
+<!-- QUICK GROUNDING DRAW -->
+
+  <article class="tool-card grounding">
+
+
+    <aside class="grounding-sidebar">
+
+      <div class="tool-label">
+        GROUND YOURSELF
+      </div>
+
+      <h2>
+        Notice what's around you.
+      </h2>
+
+      <p>
+        Take a slow look around your surroundings.
+        There is no right or wrong way to draw.
+      </p>
+
+
+      <div class="step-list">
+
+
+        <button
+          class="step-pill active"
+          type="button"
+          data-step="0">
+
+          <span class="step-number">
+            01
+          </span>
+
+          <span>
+            something you can see.
+          </span>
+
+        </button>
+
+
+        <button
+          class="step-pill"
+          type="button"
+          data-step="1">
+
+          <span class="step-number">
+            02
+          </span>
+
+          <span>
+            something you can hear.
+          </span>
+
+        </button>
+
+
+        <button
+          class="step-pill"
+          type="button"
+          data-step="2">
+
+          <span class="step-number">
+            03
+          </span>
+
+          <span>
+            something you can physically feel.
+          </span>
+
+        </button>
+
+
+        <button
+          class="step-pill"
+          type="button"
+          data-step="3">
+
+          <span class="step-number">
+            04
+          </span>
+
+          <span>
+            something you can smell.
+          </span>
+
+        </button>
+
+
+      </div>
+
+    </aside>
+
+
+
+    <div class="grounding-main">
+
+      <div class="tool-label">
+        A LITTLE GROUNDING ACTIVITY
+      </div>
+
+      <h2>
+        Quick Grounding Draw
+      </h2>
+
+      <p>
+        Take a moment to notice the world around you.
+        There is no right or wrong way to draw.
+      </p>
+
+
+      <div
+        class="stage-meta"
+        id="stageMeta">
+        1 of 4
+      </div>
+
+
+      <div
+        class="stage-name"
+        id="stageName">
+        LOOK
+      </div>
+
+
+      <div
+        class="draw-prompt"
+        id="drawPrompt">
+
+        Draw something you see.
+
+      </div>
+
+
+      <p
+        class="draw-help"
+        id="drawHelp">
+
+        Look around you and quickly sketch
+        something you can see.
+
+      </p>
+
+
+      <div class="canvas-wrap">
+
+        <canvas
+          id="groundingCanvas"
+          width="1100"
+          height="500"
+          aria-label="Drawing area for the grounding activity">
+        </canvas>
+
+      </div>
+
+
+      <div class="draw-controls">
+
+
+        <label class="color-label">
+
+          Pen
+
+          <input
+            id="penColor"
+            type="color"
+            value="#294b43">
+
+        </label>
+
+
+        <button
+          class="btn btn-soft"
+          id="undoDraw"
+          type="button">
+
+          Undo
+
+        </button>
+
+
+        <button
+          class="btn btn-soft"
+          id="clearDraw"
+          type="button">
+
+          Clear
+
+        </button>
+
+
+      </div>
+
+
+      <div class="grounding-next">
+
+        <p id="groundingHint">
+          Notice one small detail, then draw it.
+        </p>
+
+        <button
+          class="btn btn-primary"
+          id="nextGrounding"
+          type="button">
+
+          Next →
+
+        </button>
+
+      </div>
+
+
+      <div
+        class="checkin-jump"
+        id="checkinJump">
+
+        <p>
+          You've finished the four little noticing
+          steps. Scroll down and check in with yourself.
+        </p>
+
+        <button
+          class="btn btn-primary"
+          id="goCheckin"
+          type="button">
+
+          Check in ↓
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </article>
+
+
+
+<!-- CHECK IN -->
+
+  <article
+    class="tool-card checkin"
+    id="checkin">
+
+
+    <aside class="checkin-sidebar">
+
+      <div class="tool-label">
+        CHECK IN
+      </div>
+
+      <h2>
+        How are you feeling?
+      </h2>
+
+      <p>
+        There is no right or wrong answer.
+      </p>
+
+    </aside>
+
+
+    <div class="moods">
+
+      <h2>
+        Choose anything that feels close.
+      </h2>
+
+      <p>
+        You can choose more than one.
+      </p>
+
+
+      <div class="mood-grid">
+
+
+        <button
+          class="mood"
+          type="button"
+          data-mood="Calm">
+
+          🌿 Calm
+
+        </button>
+
+
+        <button
+          class="mood"
+          type="button"
+          data-mood="Okay">
+
+          ☁️ Okay
+
+        </button>
+
+
+        <button
+          class="mood"
+          type="button"
+          data-mood="Worried">
+
+          🌧️ Worried
+
+        </button>
+
+
+        <button
+          class="mood"
+          type="button"
+          data-mood="Tired">
+
+          🌙 Tired
+
+        </button>
+
+
+        <button
+          class="mood"
+          type="button"
+          data-mood="Sad">
+
+          🌸 Sad
+
+        </button>
+
+
+        <button
+          class="mood"
+          type="button"
+          data-mood="Overwhelmed">
+
+          🫧 Overwhelmed
+
+        </button>
+
+
+        <button
+          class="mood"
+          type="button"
+          data-mood="Frustrated">
+
+          🍃 Frustrated
+
+        </button>
+
+
+        <button
+          class="mood"
+          type="button"
+          data-mood="Unsure">
+
+          ✦ Unsure
+
+        </button>
+
+
+      </div>
+
+
+      <p
+        class="mood-status"
+        id="moodStatus"
+        aria-live="polite">
+      </p>
+
+    </div>
+
+  </article>
+
+
+
+<!-- JOURNAL -->
+
+  <div class="journal-grid">
+
+
+    <article class="tool-card journal-card">
+
+      <div class="tool-label">
+        PRIVATE REFLECTION
+      </div>
+
+      <h2>
+        Put it into words.
+      </h2>
+
+      <p>
+        Write anything that is on your mind.
+        This stays in this browser on this device
+        in this version of breathe.
+      </p>
+
+
+      <textarea
+        id="journal"
+        aria-label="Private reflection"
+        placeholder="I feel...">
+      </textarea>
+
+
+      <div class="tool-actions">
+
+        <button
+          class="btn btn-primary"
+          id="saveJournal"
+          type="button">
+
+          Save
+
+        </button>
+
+
+        <button
+          class="btn btn-soft"
+          id="clearJournal"
+          type="button">
+
+          Clear
+
+        </button>
+
+      </div>
+
+
+      <p
+        class="status"
+        id="journalStatus"
+        aria-live="polite">
+      </p>
+
+    </article>
+
+
+
+    <article class="tool-card journal-card">
+
+      <div class="tool-label">
+        A SMALL REMINDER
+      </div>
+
+      <h2>
+        You don't have to solve everything right now.
+      </h2>
+
+      <p>
+        Pause. Notice one thing around you.
+        Choose one small next step.
+        And if you need support, you can talk
+        to someone you trust.
+      </p>
+
+
+      <a
+        class="btn btn-pink"
+        href="support.html">
+
+        See support options →
+
+      </a>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<footer class="wave-footer">
+
+  <div class="footer-inner">
+
+    <p class="footer-lead">
+      A little space to pause, understand and breathe. 🌿
+    </p>
+
+    <div class="footer-links">
+
+      <a href="index.html">Home</a>
+      <a href="learn.html">Learn</a>
+      <a href="tools.html">Tools</a>
+      <a href="support.html">Get Help</a>
+      <a href="about.html">Privacy &amp; Sources</a>
+
+    </div>
+
+    <p class="footer-small">
+      © <span class="year"></span> breathe.
+      · General wellbeing information,
+      not a diagnosis or substitute for professional care.
+    </p>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
